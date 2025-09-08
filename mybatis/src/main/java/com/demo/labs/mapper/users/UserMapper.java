@@ -1,0 +1,10 @@
+package com.demo.labs.mapper.users;
+
+import com.demo.labs.dataobject.UserDO;
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UserMapper {
+    UserDO selectById(@Param("id") Integer id);
+}
